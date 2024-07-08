@@ -23,9 +23,9 @@ namespace repeatcacodelibrary
 
 
 
-        public float walkspeed = 1.5f;
-        public float RotationSmoothTime = 0.12f;
-        public float speedchange = 10.0f;
+        public float walkspeed = .5f;
+        public float RotationSmoothTime = 0.5f;
+        public float speedchange = 1.0f;
         public float rotation = 0.1f;
         private float cameratargetpitch;
         private float cameratargetyaw;
