@@ -365,6 +365,7 @@
 "Assets/scripts/character/inventory.cs"
 "Assets/scripts/character/movement.cs"
 "Assets/scripts/character/NewBehaviourScript.cs"
+"Assets/scripts/managers/Gamemanager.cs"
 "Assets/scripts/managers/pickupmanager.cs"
 "Assets/scripts/managers/SceneManager.cs"
 -langversion:9.0

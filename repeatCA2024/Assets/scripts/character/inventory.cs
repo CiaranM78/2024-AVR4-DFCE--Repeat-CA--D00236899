@@ -8,9 +8,15 @@ using UnityEngine;
 public class InventoryManager : ScriptableObject
 {
 
+    void Start()
+    {
 
 
-  public int Itemsize = 0;
+
+
+    }
+
+    public int Itemsize = 0;
 
     // core items
 
