@@ -10,19 +10,19 @@ namespace AVR
 {
     public class InventoryManager : MonoBehaviour
     {
-        List<objectiveitem> itemList;
+        List<ObjectiveItemData> itemList;
 
 
 
         // creates a new list
         public void Start()
         {
-            itemList = new List<objectiveitem>();
+            itemList = new List<ObjectiveItemData>();
         }
 
 
         //adds items name and description
-        public void AddItem(objectiveitem item)
+        public void AddItem(ObjectiveItemData item)
         {
             itemList.Add(item);
 
@@ -32,7 +32,7 @@ namespace AVR
 
 
         //removesitem from inventory
-        public void RemoveItem(objectiveitem item)
+        public void RemoveItem(ObjectiveItemData item)
         {
             itemList.Remove(item);
         }

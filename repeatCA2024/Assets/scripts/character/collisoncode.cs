@@ -8,18 +8,20 @@ namespace AVR
     public class PlayerCollision : MonoBehaviour
     {
         [SerializeField]
-        private ItemDataGameEvent addInventoryEvent;
+        private ObjectiveItemDataGameEvent addInventoryEvent;
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.gameObject.GetComponent<itemtest>() != null)
+            if (other.gameObject.GetComponent<itembehaviour>() != null)
             {
-                addInventoryEvent.Raise(other.gameObject.GetComponent<ItemBehaviour>().ItemData);
+                addInventoryEvent.Raise(other.gameObject.GetComponent<itembehaviour>().ObjectiveItemData);
 
                 Destroy(other.gameObject);
             }
 
         }
+
+      
     }
 }
 
