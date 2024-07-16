@@ -4,41 +4,53 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class movement : MonoBehaviour
+namespace AVR
 {
-    public Camera Camera;
 
-    private RaycastHit hit;
-
-    private NavMeshAgent agent;
-
-    private string floortag = "floor";
-
-    // Start is called before the first frame update
-    void Start()
+    public class movement : MonoBehaviour
     {
+        public Camera Camera;
 
-        agent = GetComponent<NavMeshAgent>();
+        private RaycastHit hit;
+
+        private NavMeshAgent agent;
+
         
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
+        private string floortag = "floor";
+
+        // Start is called before the first frame update
+        void Start()
         {
-           Ray ray = Camera.ScreenPointToRay(Input.mousePosition);
 
-            if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+            agent = GetComponent<NavMeshAgent>();
+           
+
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+            if (Input.GetMouseButtonDown(0))
             {
-                if (hit.collider.CompareTag(floortag))
+                Ray ray = Camera.ScreenPointToRay(Input.mousePosition);
+
+                if (Physics.Raycast(ray, out hit, Mathf.Infinity))
                 {
-                    agent.SetDestination(hit.point);
+                    if (hit.collider.CompareTag(floortag))
+                    {
+                        agent.SetDestination(hit.point);
+                  
+
+
+
+
+                    }
+                   
 
                 }
-
             }
+
         }
-        
     }
 }
