@@ -22,8 +22,8 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   UniqueId: f6d65329-a3fc-46e3-b1e1-81268a8e0b9f
-  LastUpdated: 16/07/24 18:25:14
+  LastUpdated: 18/07/24 22:02:38
   LastUpdatedBy: 
   Notes: 
-  Description: small tool used to cut wires for electronics
+  Description: Small tool used to cut wires for electronics
   Name: Wire Clippers

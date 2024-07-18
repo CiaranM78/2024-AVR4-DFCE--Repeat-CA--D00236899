@@ -12,16 +12,23 @@ namespace AVR
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.gameObject.GetComponent<itembehaviour>() != null)
+            if (other.gameObject.GetComponent<ItemBehaviour>() != null)
             {
-                addInventoryEvent.Raise(other.gameObject.GetComponent<itembehaviour>().ObjectiveItemData);
+                addInventoryEvent.Raise(other.gameObject.GetComponent<ItemBehaviour>().ObjectiveItemData);
 
+                Destroy(other.gameObject);
+            }
+
+            Debug.Log("1hello");
+            if (other.CompareTag("destructable"))
+            {
+                
                 Destroy(other.gameObject);
             }
 
         }
 
-      
+
     }
 }
 

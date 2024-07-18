@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace AVR
 {
-    public class itembehaviour : MonoBehaviour
+    public class ItemBehaviour : MonoBehaviour
     {
 
         public ObjectiveItemData ObjectiveItemData;
