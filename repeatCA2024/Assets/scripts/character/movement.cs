@@ -39,6 +39,7 @@ namespace AVR
                 {
                     if (hit.collider.CompareTag(floortag))
                     {
+                       
                         agent.SetDestination(hit.point);
                   
 
@@ -52,5 +53,9 @@ namespace AVR
             }
 
         }
+
+
+      
+
     }
 }

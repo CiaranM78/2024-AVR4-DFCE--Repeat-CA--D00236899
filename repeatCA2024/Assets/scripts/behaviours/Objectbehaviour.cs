@@ -8,7 +8,7 @@ namespace AVR
     public class ItemBehaviour : MonoBehaviour
     {
 
-        public ObjectiveItemData ObjectiveItemData;
+        public ItemData ItemData;
 
         // Start is called before the first frame update
         void Start()

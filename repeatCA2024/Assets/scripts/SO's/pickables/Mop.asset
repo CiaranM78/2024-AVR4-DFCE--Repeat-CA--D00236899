@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f8351d8d0213e84086f3ff5c8d92fe4, type: 3}
+  m_Script: {fileID: 11500000, guid: 474fe71b048a77541a22c2ce7c6334ca, type: 3}
   m_Name: Mop
   m_EditorClassIdentifier: 
   serializationData:
@@ -21,9 +21,9 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  UniqueId: d8e44f38-3c4a-45e5-82ed-359df5de533a
-  LastUpdated: 16/07/24 18:20:35
+  UniqueId: bb8e8b72-837d-4e0c-b201-1b221ae655fd
+  LastUpdated: 20/07/24 00:05:18
   LastUpdatedBy: 
   Notes: 
-  Description: Used to clean liquid spliage
-  Name: Mop
+  Description: 
+  itemName: 

@@ -10,19 +10,21 @@ namespace AVR
 {
     public class InventoryManager : MonoBehaviour
     {
-        List<ObjectiveItemData> itemList;
+        List<ItemData> itemList;
+        [SerializeField]
+        private ObjectiveDatas objectiveDatas;
 
 
 
         // creates a new list
         public void Start()
         {
-            itemList = new List<ObjectiveItemData>();
+            itemList = new List<ItemData>();
         }
 
 
         //adds items name and description
-        public void AddItem(ObjectiveItemData item)
+        public void AddItem(ItemData item)
         {
             itemList.Add(item);
 
@@ -32,7 +34,7 @@ namespace AVR
 
 
         //removesitem from inventory
-        public void RemoveItem(ObjectiveItemData item)
+        public void RemoveItem(ItemData item)
         {
             itemList.Remove(item);
         }
@@ -42,6 +44,17 @@ namespace AVR
             return itemList.Count();
 
         }
+
+        //public void ObjectiveStatus()
+        //{
+        //    if (objectiveDatas != null)
+        //    {
+        //        for ()
+        //        objectiveDatas.
+                
+        //    }
+        //}
+
 
     }
 }
