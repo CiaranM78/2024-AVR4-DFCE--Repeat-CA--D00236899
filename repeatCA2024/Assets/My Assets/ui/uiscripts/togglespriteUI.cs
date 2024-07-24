@@ -1,3 +1,4 @@
+using AVR.Selection;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,7 +7,7 @@ using UnityEngine;
 namespace AVR
 {
 
-    public class togglespriteUI : MonoBehaviour
+    public class togglespriteUI : MonoBehaviour, ISelectionResponse
 
     {
         [SerializeField]
@@ -23,12 +24,16 @@ namespace AVR
             void OnTriggerEnter(Collider other)
             {
                 if (other.gameObject.GetComponent<ItemBehaviour>() != null)
+                {
 
 
                     ToggleOnUI();
-
+                }
+                else
+                    ToggleOffUI();
 
             }
+           
         }
         private void ToggleOnUI()
         {
@@ -40,5 +45,14 @@ namespace AVR
             currentUI.SetActive(false);
         }
 
+        public void OnSelect(Transform transform)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void OnDeselect(Transform transform)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

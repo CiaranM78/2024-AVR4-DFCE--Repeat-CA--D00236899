@@ -30,6 +30,8 @@ namespace AVR
                 Destroy(other.gameObject);
             }
 
+          
+
         }
 
 

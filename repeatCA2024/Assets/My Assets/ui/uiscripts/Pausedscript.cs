@@ -10,6 +10,8 @@ public class Onpaused : MonoBehaviour
     GameObject pausemenu;
     [SerializeField]
     GameObject inventoryUI;
+    [SerializeField]
+    public GameObject pausedgame;
 
     public bool paused;
  

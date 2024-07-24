@@ -9,7 +9,7 @@ using UnityEngine;
 namespace AVR
 {
 
-    public class Letterinteraction : MonoBehaviour, ISelectionResponse
+    public class UIinteraction : MonoBehaviour, ISelectionResponse
     {
         [SerializeField]
         private float interactionDistance;

@@ -6,29 +6,35 @@ public class dooropen : MonoBehaviour
 {
 
     [SerializeField]
-    private int rayLength = 5;
+    private Animator mydoor = null;
+
     [SerializeField]
-    private LayerMask interactMask;
+    private bool mydoorEnabled = false;
     [SerializeField]
-    private string ExculdeLayerName = null;
+    private bool mydoorDisabled = false;
 
-    private MyDoorController raycastFbx;
-
-    [SerializeField] private KeyCode openDoorKey = KeyCode.Mouse0;
-
-    [SerializeField] private 
-
-
-
-    // Start is called before the first frame update
-    void OnTriggerEnter()
+    private void OnTriggerEnter(Collider other)
     {
+     if (other.CompareTag("Player"))
+     {
+
+            if (mydoorEnabled) 
+            {
+
+                mydoor.Play("open", 0, 0.0f);
+                gameObject.SetActive(false);
+
+                    }
+        } 
+     else if (mydoorDisabled)
+        {
+            mydoor.Play("close", 0, 0.0f);
+            gameObject.SetActive(false);
 
 
-
-
-        
+        }
     }
+    
 
     // Update is called once per frame
    

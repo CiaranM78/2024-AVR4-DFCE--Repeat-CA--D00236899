@@ -8,7 +8,7 @@ public class timer : MonoBehaviour
 {
     public TextMeshProUGUI timerUI;
     public float timeleft;
-
+    
 
     //Counts down
     void Update()
