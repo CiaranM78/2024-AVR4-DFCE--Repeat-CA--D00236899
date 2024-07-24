@@ -24,7 +24,6 @@ namespace AVR
 
             }
 
-            Debug.Log("1hello");
             if (other.CompareTag("destructable"))
             {
                 

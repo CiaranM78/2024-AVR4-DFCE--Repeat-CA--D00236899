@@ -7,11 +7,12 @@ TagManager:
   - pickup
   - floor
   - destructable
+  - Selectable
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Items
   - Water
   - UI
   - 
