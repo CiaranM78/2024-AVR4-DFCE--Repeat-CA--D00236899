@@ -22,12 +22,14 @@ namespace AVR
 
 
         //adds items name and description
-        public void AddItem(ItemData item)
+        public bool AddItem(ItemData item)
         {
-            inventory.Data.Add(item);
-
-            Debug.Log(item.name);
-            Debug.Log(item.Description);
+            if (inventory.Data.Add(item))
+            {
+                UIManager.Instance.SetSprite(item);
+                return true;
+            }
+            return false;
         }
 
 
@@ -35,6 +37,7 @@ namespace AVR
         public void RemoveItem(ItemData item)
         {
             inventory.Data.Remove(item);
+            UIManager.Instance.RemoveSprite(item);
         }
 
         public int Size()

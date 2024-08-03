@@ -15,15 +15,39 @@ MonoBehaviour:
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects: []
+    ReferencedUnityObjects:
+    - {fileID: 11400000, guid: a4288a8fe2b924f4ab45fbc5ce0a3fba, type: 2}
+    - {fileID: 11400000, guid: f9b8b14d8e2fdce41ac8da4d16a0a5eb, type: 2}
+    - {fileID: 11400000, guid: c610c9f0a0d48fa409e5f55a0de415d8, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes: []
+    SerializationNodes:
+    - Name: Data
+      Entry: 7
+      Data: 0|System.Collections.Generic.HashSet`1[[ItemData, Assembly-CSharp]],
+        System.Core
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 2
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
   UniqueId: dab404a1-2383-469a-8173-f35ed30b3c3c
-  LastUpdated: 25/07/24 18:26:14
+  LastUpdated: 31/07/24 02:29:52
   LastUpdatedBy: 
   Notes: 
   Description: 
-  Data: []

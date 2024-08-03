@@ -22,7 +22,7 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   UniqueId: 481a53a3-e6ee-487c-ab86-3f4e3f9b4c73
-  LastUpdated: 28/07/24 23:42:50
+  LastUpdated: 30/07/24 19:31:12
   LastUpdatedBy: 
   Notes: 
   Description: "There seems to be some type of viral infection spreading across the
@@ -30,7 +30,7 @@ MonoBehaviour:
     type of quarantine on this infection."
   itemName: 
   spriteIcon: {fileID: 0}
-  day: 0
-  month: 0
-  year: 0
-  author: 
+  day: 2
+  month: 11
+  year: 1997
+  author: Dr Y Khan

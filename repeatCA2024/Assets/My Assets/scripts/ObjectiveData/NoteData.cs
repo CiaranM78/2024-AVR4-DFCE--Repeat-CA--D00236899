@@ -26,8 +26,8 @@ namespace AVR
 
         public string Date
         {
-            get { DateTime date = new DateTime(day, month, year);
-                return date.ToString("dd/MM/yy");
+            get { DateTime date = new DateTime(year, month, day);
+                return date.ToString("dd/MM/yyyy");
             }
         }
 

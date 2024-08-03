@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21d0f4ca4d4302a419951c69664fe3d4, type: 3}
+  m_Script: {fileID: 11500000, guid: 38e5281c898257444ba4ba3717ba31bf, type: 3}
   m_Name: MedboxObjective
   m_EditorClassIdentifier: 
   serializationData:
@@ -21,10 +21,10 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  UniqueId: 17956223-7f50-4f59-b40c-af521d45247f
-  LastUpdated: 26/07/24 15:34:53
+  UniqueId: 7808b1a6-1b4f-4343-8e67-520877d238c0
+  LastUpdated: 31/07/24 17:38:40
   LastUpdatedBy: 
   Notes: 
-  Description: Find medkey to open medbox.
+  Description: Get medkey to open medical box
   itemData: {fileID: 11400000, guid: 799269d995ba61041a214cb441c8ac9a, type: 2}
   isObjectiveComplete: 0

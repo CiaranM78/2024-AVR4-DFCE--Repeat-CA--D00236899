@@ -2,49 +2,93 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 
-public class AudioSFXManager : MonoBehaviour
+
+namespace AVR
 {
-public AudioSource AmbianceSource, sfxsource;
-public SoundScript[] ambiance, SfX;
 
-
-
-    public static AudioSFXManager instance;
-
-    public void Awake()
+    public enum SoundType
     {
-        instance = this;
-
-    }
-    public void PlayMusic(string soundName)
-    {
-        SoundScript sound = Array.Find(ambiance, x => x.soundname == soundName);
-
-        if (sound == null )
-        {
-            Debug.Log("sound not found");
-        }
-        else
-        {
-            AmbianceSource.clip = sound.clip;
-            AmbianceSource.Play();
-        }
+        MedicalFacility,
+        UFO,
+        MainTheme,
+        SFX
     }
 
-    public void PlaySFX(string soundName)
+    [RequireComponent(typeof(AudioSource))]
+    public class AudioSFXManager : MonoBehaviour
     {
-        SoundScript sound = Array.Find(ambiance, x => x.soundname == soundName);
+        private static AudioSFXManager _instance;
+        private AudioSource _audioSource;
 
-        if (sound == null)
+
+        [SerializeField] Slider volumeslider;
+        [SerializeField] private AudioClip[] soundList;
+
+
+
+        private Dictionary<SoundType, AudioClip> soundDictionary;
+
+        public static AudioSFXManager Instance
         {
-            Debug.Log("sound not found");
+            get
+            {
+                if (_instance == null)
+                {
+                    Debug.LogError("AudioSFXManager is NULL");
+                }
+                return _instance;
+            }
         }
-        else
+
+        private void Awake()
         {
-            sfxsource.PlayOneShot(sound.clip)
-            ;
+            if (_instance == null)
+            {
+                _instance = this;
+                
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
+
+            _audioSource = GetComponent<AudioSource>();
+            soundDictionary = new Dictionary<SoundType, AudioClip>();
+
+            for (int i = 0; i < soundList.Length; i++)
+            {
+                soundDictionary[(SoundType)i] = soundList[i];
+            }
         }
+
+        public static void PlaySound(SoundType sound, float volume = 0.5f)
+        {
+            if (Instance.soundDictionary.TryGetValue(sound, out var clip))
+            {
+                Instance._audioSource.PlayOneShot(clip, volume);
+            }
+            else
+            {
+                Debug.LogWarning($"Sound {sound} not found in the dictionary.");
+            }
+        }
+
+        public static void StopSound(SoundType sound)
+        {
+            Instance._audioSource.Stop();
+        }
+
+        public void ChangeVolume(float volume)
+        {
+            AudioListener.volume = volumeslider.value;
+        }
+
+        public void Update()
+        {
+            volumeslider.value = AudioListener.volume;
+        }
+
     }
-
 }

@@ -22,7 +22,7 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   UniqueId: 481a53a3-e6ee-487c-ab86-3f4e3f9b4c73
-  LastUpdated: 28/07/24 23:42:24
+  LastUpdated: 30/07/24 19:31:13
   LastUpdatedBy: 
   Notes: 
   Description: ' My superiors assigned me to a project to deconstruct the space vessel
@@ -30,7 +30,7 @@ MonoBehaviour:
     me personally I would rather repair the vessel and fly off on it '
   itemName: 
   spriteIcon: {fileID: 0}
-  day: 0
-  month: 0
-  year: 0
-  author: 
+  day: 16
+  month: 10
+  year: 1997
+  author: Dr Y Khan

@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21d0f4ca4d4302a419951c69664fe3d4, type: 3}
+  m_Script: {fileID: 11500000, guid: 38e5281c898257444ba4ba3717ba31bf, type: 3}
   m_Name: BoxObjective
   m_EditorClassIdentifier: 
   serializationData:
@@ -21,11 +21,10 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  UniqueId: 17956223-7f50-4f59-b40c-af521d45247f
-  LastUpdated: 26/07/24 15:34:53
+  UniqueId: 0c52116c-da3f-488f-b2a4-c00fc4e7b7b3
+  LastUpdated: 31/07/24 17:38:40
   LastUpdatedBy: 
   Notes: 
-  Description: Clean up boxes in experiment area to find something to open the numpad
-    door.
+  Description: Find a way to open the storage boxes.
   itemData: {fileID: 11400000, guid: f9b8b14d8e2fdce41ac8da4d16a0a5eb, type: 2}
   isObjectiveComplete: 0

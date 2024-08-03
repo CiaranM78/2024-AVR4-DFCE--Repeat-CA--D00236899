@@ -6,6 +6,7 @@ using UnityEngine;
 
 
 
+
     public class PlayerCollision : MonoBehaviour
     {
         [SerializeField]
@@ -20,37 +21,43 @@ using UnityEngine;
         [SerializeField]
         private NoteDataGameEvent noteDataUIEvent;
 
-        //[SerializeField]
-        //private togglespriteUI
+       
 
-        //[SerializeField]
-        //private bool ItemPickedup;
 
-        private void OnTriggerEnter(Collider other)
+    //[SerializeField]
+    //private togglespriteUI
+
+    //[SerializeField]
+    //private bool ItemPickedup;
+
+    private void OnTriggerEnter(Collider other)
         {
             if (other.gameObject.GetComponent<ItemBehaviour>() != null)
             {
                 ItemData itemdata = other.gameObject.GetComponent<ItemBehaviour>().ItemData;
+           
 
 
             if (itemdata is NoteData)
             {
                 noteDataUIEvent.Raise(itemdata as NoteData);
+               
 
             }
             addInventoryEvent.Raise(other.gameObject.GetComponent<ItemBehaviour>().ItemData);
 
-                
-                UIManager.Instance.SetSprite(other.gameObject.GetComponent<ItemBehaviour>().ItemData);
-                Destroy(other.gameObject);
+
+            UIManager.Instance.SetSprite(other.gameObject.GetComponent<ItemBehaviour>().ItemData);
+            Destroy(other.gameObject);
 
             }
 
             if (other.CompareTag("destructable"))
             {
-                
-                Destroy(other.gameObject);
-            }
+            AudioSFXManager.PlaySound(SoundType.SFX);
+            Destroy(other.gameObject);
+            
+        }
 
             if (other.CompareTag("Objective"))
             {

@@ -22,7 +22,7 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   UniqueId: 481a53a3-e6ee-487c-ab86-3f4e3f9b4c73
-  LastUpdated: 28/07/24 23:42:09
+  LastUpdated: 30/07/24 19:31:12
   LastUpdatedBy: 
   Notes: 
   Description: "I never thought that there was life out there, but here I am looking
@@ -31,7 +31,7 @@ MonoBehaviour:
     what made it crash."
   itemName: 
   spriteIcon: {fileID: 0}
-  day: 0
-  month: 0
-  year: 0
-  author: 
+  day: 7
+  month: 10
+  year: 1997
+  author: Dr G Adams

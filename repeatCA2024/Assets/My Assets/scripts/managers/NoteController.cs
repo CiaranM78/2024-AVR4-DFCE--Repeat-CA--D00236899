@@ -22,8 +22,8 @@ public class NoteController : MonoBehaviour
             bodyText.text = "Dear Diary, \n" + noteData.Description;
             authorText.text = noteData.Author;
             dateText.text = noteData.Date;
-      
 
+        Debug.Log(noteData.Date);
     }
 
 

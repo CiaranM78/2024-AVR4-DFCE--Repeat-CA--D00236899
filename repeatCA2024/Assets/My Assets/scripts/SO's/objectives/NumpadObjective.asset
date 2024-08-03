@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21d0f4ca4d4302a419951c69664fe3d4, type: 3}
+  m_Script: {fileID: 11500000, guid: 38e5281c898257444ba4ba3717ba31bf, type: 3}
   m_Name: NumpadObjective
   m_EditorClassIdentifier: 
   serializationData:
@@ -21,10 +21,10 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  UniqueId: 1398b3e2-debd-469f-a2dc-ee91893d2757
-  LastUpdated: 22/07/24 19:35:57
+  UniqueId: 1f2c972a-b15c-433e-97f2-b1aa74e988bc
+  LastUpdated: 31/07/24 17:38:40
   LastUpdatedBy: 
   Notes: 
-  Description: Use wirecutters to hack into numpad
+  Description: Find a way to get past the numberpad door
   itemData: {fileID: 11400000, guid: 31a59d20e4a86b944849aa4a66aa4af2, type: 2}
   isObjectiveComplete: 0
