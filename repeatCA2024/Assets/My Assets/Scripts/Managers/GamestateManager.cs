@@ -1,34 +1,56 @@
+using AVR;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
-namespace AVR
+
+public class GameStateManager : Singleton<GameStateManager>
 {
-    public class GamestateManager : MonoBehaviour
+    [SerializeField]
+    private ObjectivesData objectivesData;
+
+    [SerializeField]
+    private InventoryData inventory;
+
+
+    //  private Dictionary<inventory, ObjectivesData> ObjectiveDictionary;
+
+    public bool UpdateGameState()
     {
-
-        public static void CheckGameState() {
-            
-
-        
-        
-        }
-
-
-
-
-
-        // Start is called before the first frame update
-        void Start()
+        foreach (var item in inventory.Data)
         {
+            if (item.Equals(objectivesData.GetCurrentObjectiveData().ItemData))
+            {
+                UpdateObjective();
+                return true;
+            }
 
         }
+        return false;
+    }
 
-        // Update is called once per frame
-        void Update()
+    private void UpdateObjective()
+    {
+        if (objectivesData.IsLastObjective())
         {
-
+            Time.timeScale = 0f;
+            SceneManager.LoadScene(0);
+        }
+        else
+        {
+            objectivesData.IncrementObjective();
+            //  UIManager.Instance;
         }
     }
+
+    public void Start()
+    {
+       
+        objectivesData.ResetObjective();
+    }
+
 }
+
+

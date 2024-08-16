@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da346e1609308d3449b79dc0e0af94b6, type: 3}
+  m_Name: EnemyBesideUFOData
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  UniqueId: 2a2beb98-7358-4ddf-90cc-c9d5eedf239c
+  LastUpdated: 10/08/24 00:07:27
+  LastUpdatedBy: 
+  Notes: 
+  Description: 
+  waypoints:
+  - {x: 160, y: 1, z: 98}
+  - {x: 209, y: 0, z: 96}
+  speed: 3.23

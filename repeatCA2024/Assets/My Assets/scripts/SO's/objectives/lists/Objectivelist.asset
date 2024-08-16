@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
-    SerializedBytes: []
+    SerializedBytes: 
     ReferencedUnityObjects: []
     SerializedBytesString: 
     Prefab: {fileID: 0}
@@ -22,7 +22,7 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   UniqueId: aab93742-d1f8-4698-b58c-2588acf07461
-  LastUpdated: 25/07/24 17:09:55
+  LastUpdated: 16/08/24 20:05:32
   LastUpdatedBy: 
   Notes: 
   Description: 
@@ -31,4 +31,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a0ed56f163f4b2241b69aa9240ec724f, type: 2}
   - {fileID: 11400000, guid: ca0abbccc98ffe546ae6c616b2d940d1, type: 2}
   - {fileID: 11400000, guid: 19b8168758d423e4dac13e3b5d95a518, type: 2}
-  CurrentObjective: 0
+  - {fileID: 11400000, guid: c49301350f044f345bdc263575e93dab, type: 2}
+  - {fileID: 11400000, guid: 0384fbdc2f197b848a0e146f81d6f3b2, type: 2}
+  currentObjective: 1

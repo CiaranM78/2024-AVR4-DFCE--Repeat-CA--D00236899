@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da346e1609308d3449b79dc0e0af94b6, type: 3}
+  m_Name: EnemyBesideFacilityData
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  UniqueId: 657b694c-224c-4c34-a6da-3ad7eb9848d6
+  LastUpdated: 09/08/24 23:24:13
+  LastUpdatedBy: 
+  Notes: 
+  Description: 
+  waypoints:
+  - {x: 115, y: 1, z: 145}
+  - {x: 5, y: 1, z: 140}
+  - {x: 15, y: 1, z: 15}
+  - {x: 110, y: 1, z: 5}
+  speed: 0

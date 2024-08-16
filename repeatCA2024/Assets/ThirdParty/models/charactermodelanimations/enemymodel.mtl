@@ -1,0 +1,44 @@
+# Blender 4.0.1 MTL File: 'None'
+# www.blender.org
+
+newmtl Ch11_body
+Ka 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 3
+map_Kd C:/Ch11_1001_Diffuse.png
+map_Ks C:/Ch11_1001_Specular.png
+map_Ns C:/Ch11_1001_Glossiness.png
+map_d C:/Ch11_1001_Diffuse.png
+map_Bump -bm 1.000000 C:/Ch11_1001_Normal.png
+
+newmtl Ch11_body1
+Ka 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd C:/Ch11_1002_Diffuse.png
+map_Ks C:/Ch11_1002_Specular.png
+map_Ns C:/Ch11_1002_Glossiness.png
+map_Bump -bm 1.000000 C:/Ch11_1002_Normal.png
+
+newmtl Material.001
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800466 0.796793 0.336422
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl Material.002
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.038278 0.038278 0.038278
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3

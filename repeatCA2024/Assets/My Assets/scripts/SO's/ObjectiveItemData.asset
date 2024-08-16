@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21d0f4ca4d4302a419951c69664fe3d4, type: 3}
+  m_Script: {fileID: 11500000, guid: 38e5281c898257444ba4ba3717ba31bf, type: 3}
   m_Name: ObjectiveItemData
   m_EditorClassIdentifier: 
   serializationData:
@@ -21,10 +21,10 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  UniqueId: daac730e-88b5-4d6e-999b-e1e148eb535e
-  LastUpdated: 25/07/24 21:31:01
+  UniqueId: aad87f4e-25ac-422f-82f5-e1b588690ac2
+  LastUpdated: 08/08/24 20:00:52
   LastUpdatedBy: 
   Notes: 
   Description: 
-  itemData: {fileID: 0}
+  itemData: []
   isObjectiveComplete: 0

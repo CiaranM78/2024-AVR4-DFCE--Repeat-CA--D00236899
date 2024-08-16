@@ -22,9 +22,9 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   UniqueId: bb8e8b72-837d-4e0c-b201-1b221ae655fd
-  LastUpdated: 29/07/24 21:43:15
+  LastUpdated: 05/08/24 18:26:07
   LastUpdatedBy: 
   Notes: 
-  Description: 
+  Description: sharp used to slice objects
   itemName: Sword
   spriteIcon: {fileID: 21300000, guid: 724b26172c00aa84e9a0417e8e0c616a, type: 3}

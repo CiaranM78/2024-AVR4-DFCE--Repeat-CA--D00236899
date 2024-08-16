@@ -8,19 +8,34 @@ namespace AVR {
 
     {
 
+        private void Start()
+        {
+            SoundManager.Instance.PlaySound(SoundType.MainTheme, 0.1f);
+        }
+
         [SerializeField]
         private SoundType sound;
+        private float volume;
 
         private void OnTriggerEnter(Collider other)
         {
-            AudioSFXManager.PlaySound(sound);
+            if (sound != SoundType.MainTheme)
+            {
+                SoundManager.Instance.StopSound(SoundType.MainTheme);
+            }
+            SoundManager.Instance.PlaySound(sound);
         }
 
 
 
         private void OnTriggerExit(Collider other)
         {
-            AudioSFXManager.StopSound(sound);
+            SoundManager.Instance.StopSound(sound);
+
+            if (sound != SoundType.MainTheme)
+            {
+                SoundManager.Instance.PlaySound(SoundType.MainTheme);
+            }
         }
 
 

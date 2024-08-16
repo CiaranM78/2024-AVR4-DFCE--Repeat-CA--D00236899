@@ -70,14 +70,14 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: -927199367670048503, guid: 4e3859e7d4623f64ca345e315aebd6e6, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 447844198136179119}
+      addedObject: {fileID: 3362047190877860555}
   m_SourcePrefab: {fileID: 100100000, guid: 4e3859e7d4623f64ca345e315aebd6e6, type: 3}
 --- !u!1 &6733879296463188941 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 4e3859e7d4623f64ca345e315aebd6e6, type: 3}
   m_PrefabInstance: {fileID: 3337843096385022660}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &447844198136179119
+--- !u!114 &3362047190877860555
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -86,7 +86,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6733879296463188941}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86c87dccf43e2d64aae200b434834547, type: 3}
+  m_Script: {fileID: 11500000, guid: 63d5f8ffee558cf45af6cfd1947cc8c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectiveItemData: {fileID: 0}
+  spawnpoint: {fileID: 0}
+  spawnpointPrefab: {fileID: 0}
+  objectivesData: {fileID: 11400000, guid: 7f23c4a3a0411554eb8c3e45101ce8d9, type: 2}
+  inventory: {fileID: 11400000, guid: cbb25b9d890862a4bbff3e1b272cdddd, type: 2}

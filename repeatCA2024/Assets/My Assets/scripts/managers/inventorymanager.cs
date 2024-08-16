@@ -18,18 +18,18 @@ namespace AVR
         public void Start()
         {
            inventory.Data.Clear();
+           
         }
 
 
         //adds items name and description
-        public bool AddItem(ItemData item)
+        public void AddItem(ItemData item)
         {
             if (inventory.Data.Add(item))
             {
                 UIManager.Instance.SetSprite(item);
-                return true;
+            
             }
-            return false;
         }
 
 
@@ -46,15 +46,6 @@ namespace AVR
 
         }
 
-        //public void ObjectiveStatus()
-        //{
-        //    if (objectiveDatas != null)
-        //    {
-        //        for ()
-        //        objectiveDatas.
-                
-        //    }
-        //}
 
 
     }

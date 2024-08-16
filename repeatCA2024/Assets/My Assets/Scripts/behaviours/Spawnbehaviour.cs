@@ -7,7 +7,7 @@ using UnityEngine.UIElements;
 
 namespace AVR
 {
-    public class SpawnBehaviour : MonoBehaviour
+    public class SpawnBehaviour : ObjectiveBehaviour
     {
 
         [SerializeField]
@@ -16,19 +16,26 @@ namespace AVR
         [SerializeField]
         private GameObject spawnpointPrefab;
 
+        [SerializeField]
+        private ObjectivesData objectivesData;
+
+        [SerializeField]
+        private InventoryData inventory;
 
 
-        // Start is called before the first frame update
-        void Start()
+
+        private void MedicineSpawn()
         {
-            Instantiate(spawnpointPrefab, spawnpoint.position, spawnpoint.rotation);
 
+            Debug.Log("medicine Spawned");
+            Instantiate(spawnpointPrefab, spawnpoint.position, spawnpoint.rotation);
         }
 
-        // Update is called once per frame
-        void Update()
-        {
 
+        protected override void HandleObjective()
+        {
+           
+            MedicineSpawn();
         }
     }
 }

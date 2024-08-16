@@ -18,44 +18,46 @@ using UnityEngine.UI;
         [SerializeField]
         private List<ObjectiveData> objectives;
 
-        public int CurrentObjective = 0;
-        private object objectivesList;
+        [SerializeField]
+        private int currentObjective = 0;
 
-    public ObjectiveData GetObjectiveData()
+    
+
+
+
+    public ObjectiveData GetCurrentObjectiveData()
         {
-        return objectives[CurrentObjective];
-        }
-
-    //public ObjectiveData SetObjectiveData()
-    //{
-    //    Text[objectives].gameObject.GetComponent<CurrentObjectiveEvent>().ItemData = objectives;
-    //}
-
-    //bool IsLastObjective()
-    //{
-    //    return CurrentObjective == objectivesList.Count() - 1;
-    //}
-
-    void IncrementObjective() 
-    { 
-        CurrentObjective++; 
-
-    if ((bool)(objectivesList = 5)) 
+        if (currentObjective >= 0 && currentObjective < objectives.Count)
         {
-
-            SceneManager.LoadScene(1);
-
+            return objectives[currentObjective];
         }
+        else
+        {
+            return null;
+        }
+    }
+
+
+
+    public bool IsLastObjective()
+    {
+        return currentObjective == objectives.Count() - 1;
+    }
+
+    public void IncrementObjective() 
+    {
+        currentObjective++; 
     
     }
 
-    public List<ObjectiveData> Objectives
-        {
-            get { return objectives; }
-        }
-
-
+    public void ResetObjective()
+    {
+        
+        currentObjective = 0;
 
     }
+
+
+}
 
 
