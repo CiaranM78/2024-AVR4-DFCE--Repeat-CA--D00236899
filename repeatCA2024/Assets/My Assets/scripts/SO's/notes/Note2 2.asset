@@ -22,14 +22,14 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   UniqueId: 481a53a3-e6ee-487c-ab86-3f4e3f9b4c73
-  LastUpdated: 30/07/24 19:31:12
+  LastUpdated: 17/08/24 15:40:35
   LastUpdatedBy: 
   Notes: 
   Description: From further inspection it seems to be some type of medical ship of
     some kind or maybe it was transferring some form of medical supplies, my boss
     wants me to investigate their medical technology further.
   itemName: 
-  spriteIcon: {fileID: 0}
+  spriteIcon: {fileID: 21300000, guid: c5d1a873531588d4b8dec758e777005c, type: 3}
   day: 18
   month: 10
   year: 1997
