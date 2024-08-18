@@ -22,9 +22,12 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   UniqueId: 81254068-dab7-4656-b01e-81b80e6347c6
-  LastUpdated: 15/08/24 16:51:08
+  LastUpdated: 17/08/24 19:02:19
   LastUpdatedBy: 
   Notes: 
   Description: Explore facility grounds to find any clues on how to cure your daughter.
-  itemData: {fileID: 11400000, guid: 137973ecf67dc964abb36a83d610db24, type: 2}
+  itemDatas:
+  - {fileID: 11400000, guid: 137973ecf67dc964abb36a83d610db24, type: 2}
+  - {fileID: 11400000, guid: 6a3358215a935124f82c41c30953997d, type: 2}
+  - {fileID: 11400000, guid: 07ad9b00b2625c54fac60e8a364b55bb, type: 2}
   isObjectiveComplete: 0

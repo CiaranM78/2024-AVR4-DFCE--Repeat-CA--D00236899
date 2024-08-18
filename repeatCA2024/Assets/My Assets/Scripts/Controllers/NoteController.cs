@@ -16,6 +16,9 @@ public class NoteController : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI dateText;
 
+    [SerializeField]
+    private PlayerController playerController;
+
     public void SetNoteUI(NoteData noteData)
     {
     
@@ -23,10 +26,16 @@ public class NoteController : MonoBehaviour
             authorText.text = noteData.Author;
             dateText.text = noteData.Date;
 
-        Debug.Log(noteData.Date);
     }
 
-
+    public void Update()
+    {
+        if (Input.GetKey(KeyCode.E))
+        {
+            playerController.enabled = true;
+            gameObject.SetActive(false);
+        }
+    }
 
 
 

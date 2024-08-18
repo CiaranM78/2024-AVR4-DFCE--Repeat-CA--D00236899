@@ -10,5 +10,5 @@ using UnityEngine;
      menuName = "AVR/Scriptable Objects/Game/InventoryData")]
 public class InventoryData : ScriptableGameObject
 {
-   public HashSet<ItemData> Data;
+   public List<ItemData> Data;
 }

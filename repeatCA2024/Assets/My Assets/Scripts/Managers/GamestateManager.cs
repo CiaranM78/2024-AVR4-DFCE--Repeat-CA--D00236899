@@ -11,24 +11,12 @@ public class GameStateManager : Singleton<GameStateManager>
     [SerializeField]
     private ObjectivesData objectivesData;
 
-    [SerializeField]
-    private InventoryData inventory;
-
 
     //  private Dictionary<inventory, ObjectivesData> ObjectiveDictionary;
 
     public bool UpdateGameState()
     {
-        foreach (var item in inventory.Data)
-        {
-            if (item.Equals(objectivesData.GetCurrentObjectiveData().ItemData))
-            {
-                UpdateObjective();
-                return true;
-            }
-
-        }
-        return false;
+        return objectivesData.GetCurrentObjectiveData().IsObjectiveComplete;
     }
 
     private void UpdateObjective()

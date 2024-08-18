@@ -1,4 +1,5 @@
 using AVR;
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,6 +15,8 @@ using UnityEngine.UI;
         [SerializeField]
         private Sprite spriteIcon;
 
+        public bool IsObjective;
+
         public string ItemName
         {
             get { return itemName; }
@@ -24,20 +27,5 @@ using UnityEngine.UI;
             get { return spriteIcon; }
         }
 
-  
-
-
-  
-
-
    
-   
-
-
-
-
-
-
-
-
 }

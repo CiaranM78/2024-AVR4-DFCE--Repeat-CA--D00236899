@@ -3,7 +3,12 @@ guid: ec94976524b261844abee31c4053c537
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - pauseUIObject: {instanceID: 0}
+  - objectivesData: {fileID: 11400000, guid: 7f23c4a3a0411554eb8c3e45101ce8d9, type: 2}
+  - currentObjectiveText: {instanceID: 0}
+  - objectivePanel: {instanceID: 0}
+  - itemUIPrefab: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

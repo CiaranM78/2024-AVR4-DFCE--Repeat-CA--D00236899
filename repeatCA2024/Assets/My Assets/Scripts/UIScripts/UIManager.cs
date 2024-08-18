@@ -3,8 +3,10 @@ using AVR;
 using System;
 using System.Collections;
 using System.Collections.Generic;
-
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace AVR
@@ -14,14 +16,25 @@ namespace AVR
     {
 
 
-        public GameObject pauseUIobject;
+        [SerializeField]
+        public GameObject pauseUIObject;
 
         [SerializeField]
-        private ObjectivesData objective;
+        private ObjectivesData objectivesData;
 
         [SerializeField]
         public Image[] images;
         private int currentIndex = 0;
+
+        [SerializeField]
+        private TextMeshProUGUI currentObjectiveText;
+
+        [SerializeField]
+        private Transform objectivePanel;
+
+        [SerializeField]
+        private GameObject itemUIPrefab;
+
 
 
         public void SetSprite(ItemData itemData)
@@ -31,6 +44,34 @@ namespace AVR
             currentIndex++;
         }
 
+        private void Start()
+        {
+           SetObjectiveText();
+        }
+
+        public void SetObjectiveText()
+        {
+            currentObjectiveText.text = objectivesData.GetCurrentObjectiveData().Description;
+
+            foreach (ItemData item in objectivesData.GetCurrentObjectiveData().ItemDatas)
+            {
+                var newItem = Instantiate(itemUIPrefab, objectivePanel);
+                newItem.transform.Find("Label").GetComponent<Text>().text = item.ItemName;
+                newItem.transform.Find("Sprite").GetComponent<Image>().sprite = item.SpriteIcon;
+                newItem.GetComponent<ObjectiveLabel>().ItemData = item;
+            }
+        }
+
+        public void UpdateObjectives(ItemData itemData)
+        {
+            foreach (Transform gameObject in objectivePanel)
+            {
+                if (gameObject.GetComponent<ObjectiveLabel>().ItemData == itemData)
+                {
+                    gameObject.transform.Find("Line").gameObject.SetActive(true);
+                }
+            }
+        }
 
         public void RemoveSprite(ItemData itemData)
         {
@@ -42,7 +83,6 @@ namespace AVR
             {
                 if (images[i].gameObject.GetComponent<RemoveItemController>().ItemData.ItemName == itemData.ItemName)
                 {
-                    Debug.Log("Boom " + i);
                     index = i; break;
                 }
             }
@@ -77,6 +117,10 @@ namespace AVR
             }
         }
 
+        public void SetEndObjectiveText()
+        {
+            currentObjectiveText.text = objectivesData.GetCurrentObjectiveData().EndDescription;
+        }
     }
 
 

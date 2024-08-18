@@ -22,9 +22,11 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   UniqueId: a231bb6b-e786-46c9-9189-599ab0800898
-  LastUpdated: 31/07/24 17:38:40
+  LastUpdated: 17/08/24 19:02:19
   LastUpdatedBy: 
   Notes: 
   Description: Clean up the spilage to get to the storage room
-  itemData: {fileID: 11400000, guid: a4288a8fe2b924f4ab45fbc5ce0a3fba, type: 2}
+  itemDatas:
+  - {fileID: 11400000, guid: a4288a8fe2b924f4ab45fbc5ce0a3fba, type: 2}
+  - {fileID: 11400000, guid: c610c9f0a0d48fa409e5f55a0de415d8, type: 2}
   isObjectiveComplete: 0

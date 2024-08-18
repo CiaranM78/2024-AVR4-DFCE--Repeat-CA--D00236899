@@ -12,12 +12,15 @@ using UnityEngine.SceneManagement;
     {
 
     private void OnTriggerEnter(Collider other)
-        {
+    {
 
-        if(other.GetComponent<ICollidable>() != null)
+
+        if (other.GetComponent<ICollidable>() != null)
         {
             other.GetComponent<ICollidable>().OnCollision();
         }
+
+        
 
         //if (other.CompareTag("destructable"))
         //{

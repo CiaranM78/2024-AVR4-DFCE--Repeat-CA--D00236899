@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def50f51db0117042b64716389000d32, type: 3}
+  m_Name: timerfrozenData
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  UniqueId: bdd4bc75-8b8f-492d-9cf5-83f7e6848b54
+  LastUpdated: 18/08/24 03:36:09
+  LastUpdatedBy: 
+  Notes: 
+  Description: 
+  itemName: timerfrozen
+  spriteIcon: {fileID: 21300000, guid: 773300c96b32134429acd5913eab76d4, type: 3}
+  IsObjective: 0
+  duration: 10

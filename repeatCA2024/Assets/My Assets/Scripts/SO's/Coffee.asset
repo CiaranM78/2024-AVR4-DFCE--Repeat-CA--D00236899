@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e0dec4245095d4888b8e76231c8366, type: 3}
+  m_Name: Coffee
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  UniqueId: 74edd3ec-8a46-4de7-b541-1e4617e55e00
+  LastUpdated: 17/08/24 22:22:24
+  LastUpdatedBy: 
+  Notes: 
+  Description: gives you a speed boost
+  itemName: coffee
+  spriteIcon: {fileID: 21300000, guid: 9f7bab2965a3a9746947300e5f3f64d1, type: 3}
+  duration: 10
+  normalBoostData:
+    speed: 4
+    acceleration: 6
+  boostData:
+    speed: 20
+    acceleration: 20

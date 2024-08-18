@@ -7,15 +7,19 @@ using UnityEngine;
      menuName = "AVR/Scriptable Objects/Game/ObjectItemData")]
 public class ObjectiveData : ScriptableGameObject
 {
+
     [SerializeField]
-    private ItemData itemData;
+    private List<ItemData> itemDatas;
 
     [SerializeField]
     private bool isObjectiveComplete;
 
-    public ItemData ItemData
+    [SerializeField]
+    private string endDescription;
+
+    public List<ItemData> ItemDatas
     {
-        get { return itemData; }
+        get { return itemDatas; }
     }
 
     public bool IsObjectiveComplete
@@ -23,4 +27,20 @@ public class ObjectiveData : ScriptableGameObject
         get { return isObjectiveComplete; }
         set { isObjectiveComplete = value; }
     }
+
+    public string EndDescription 
+    { 
+        get { return endDescription; }
+        set { endDescription = value; }
+    }
+
+    public void SetCurrentObjectiveItems(bool isObjective)
+    {
+        foreach (var item in itemDatas)
+        {
+            item.IsObjective = isObjective;
+
+        }
+    }
+
 }

@@ -22,9 +22,12 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   UniqueId: 2d6951ed-fe74-432d-89b7-49194e50024e
-  LastUpdated: 10/08/24 00:57:20
+  LastUpdated: 18/08/24 04:41:38
   LastUpdatedBy: 
   Notes: 
-  Description: Find spare key to escape home.
-  itemData: {fileID: 11400000, guid: 9d8e171a3f5514b4e8e832d396a3e6d0, type: 2}
-  isObjectiveComplete: 0
+  Description: explore home.
+  itemDatas:
+  - {fileID: 11400000, guid: acaa08737a2590140a6d40566d4e5453, type: 2}
+  - {fileID: 11400000, guid: 9d8e171a3f5514b4e8e832d396a3e6d0, type: 2}
+  isObjectiveComplete: 1
+  endDescription: Unlock door

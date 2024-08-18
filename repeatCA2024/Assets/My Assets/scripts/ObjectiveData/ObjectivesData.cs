@@ -43,18 +43,19 @@ using UnityEngine.UI;
     {
         return currentObjective == objectives.Count() - 1;
     }
+   
 
     public void IncrementObjective() 
     {
-        currentObjective++; 
-    
+        GetCurrentObjectiveData().SetCurrentObjectiveItems(false);
+        currentObjective++;
+        GetCurrentObjectiveData().SetCurrentObjectiveItems(true);
     }
 
     public void ResetObjective()
     {
-        
         currentObjective = 0;
-
+        GetCurrentObjectiveData().SetCurrentObjectiveItems(true);
     }
 
 

@@ -1,3 +1,4 @@
+using AVR;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -79,12 +80,17 @@ public class EnemyBehaviour : MonoBehaviour
         // Perform the sphere cast
         if (Physics.SphereCast(origin, detectionRadius, direction, out RaycastHit hit, detectionRange, playerLayerMask,QueryTriggerInteraction.UseGlobal))
         {
-            // Check if the sphere cast hit an enemy
-            Debug.Log($"Enemy detected: {hit.collider.gameObject.name}");
+            if(!hit.collider.gameObject.GetComponent<PlayerController>().IsCamouflaged) 
+            {
+                // Check if the sphere cast hit an enemy
+                Debug.Log($"Enemy detected: {hit.collider.gameObject.name}");
 
-            StartCoroutine(GameOverDelay());
+                StartCoroutine(GameOverDelay());
 
-            // You can add your logic here, e.g., attack the enemy or change behavior
+            }
+            
+
+            
         }
     }
 

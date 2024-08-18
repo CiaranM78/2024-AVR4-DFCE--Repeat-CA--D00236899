@@ -22,9 +22,10 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   UniqueId: 0c52116c-da3f-488f-b2a4-c00fc4e7b7b3
-  LastUpdated: 16/08/24 20:05:32
+  LastUpdated: 17/08/24 19:02:19
   LastUpdatedBy: 
   Notes: 
   Description: Find a way to open the storage boxes.
-  itemData: {fileID: 11400000, guid: f9b8b14d8e2fdce41ac8da4d16a0a5eb, type: 2}
+  itemDatas:
+  - {fileID: 11400000, guid: f9b8b14d8e2fdce41ac8da4d16a0a5eb, type: 2}
   isObjectiveComplete: 0

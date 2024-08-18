@@ -22,11 +22,12 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   UniqueId: 77b8570f-efec-4f7e-937d-c6b1a6bc5927
-  LastUpdated: 08/08/24 20:10:06
+  LastUpdated: 18/08/24 04:41:38
   LastUpdatedBy: 
   Notes: 
   Description: 'spare Key to the house
 
 '
-  itemName: 
+  itemName: House Key
   spriteIcon: {fileID: 21300000, guid: 3d325a8396342204d8f0d0a690a99532, type: 3}
+  IsObjective: 1

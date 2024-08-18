@@ -20,7 +20,7 @@ namespace AVR
         {
             foreach (var item in inventory.Data)
             {
-                if (item.Equals(objectivesData.GetCurrentObjectiveData().ItemData))
+                if (item.Equals(objectivesData.GetCurrentObjectiveData().ItemDatas))
                 {
                     UpdateObjective();
                     break;

@@ -4,22 +4,49 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class timer : MonoBehaviour
+public class TimerBehaviour : MonoBehaviour
 {
-    public TextMeshProUGUI timerUI;
-    public float timeleft;
-    
+    private TextMeshProUGUI timerUI;
+
+    [SerializeField]
+    private float timeleft;
+
+    private bool isTimerFrozen = false;
+
+    public TextMeshProUGUI TimerUI
+    {
+        get { return timerUI; }
+    }
+
+    public bool IsTimerFrozen 
+    {  
+        get { return isTimerFrozen; } 
+        set { isTimerFrozen = value; }
+    }
+    private void Start()
+    {
+        timerUI = GetComponent<TextMeshProUGUI>();
+    }
 
     //Counts down
     void Update()
     {
+        if (!isTimerFrozen)
+        {
+            UpdateTimer();
+        }
 
+
+    }
+
+    private void UpdateTimer()
+    {
         //if timer is higher then zero take away time
-        if (timeleft > 0)
+        if (timeleft >= 0)
         {
             timeleft -= Time.deltaTime;
         }
-        else if (timeleft < 0)
+        else
         {
             timeleft = 0;
 
@@ -32,8 +59,5 @@ public class timer : MonoBehaviour
 
 
         timerUI.text = string.Format("{0:00}:{1:00}", minutes, seconds);
-
-
-
     }
 }

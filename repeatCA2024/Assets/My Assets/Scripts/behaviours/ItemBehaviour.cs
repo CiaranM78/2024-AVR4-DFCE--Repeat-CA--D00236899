@@ -23,12 +23,12 @@ namespace AVR
                 noteDataUIEvent.Raise(ItemData as NoteData);
 
             }
+ 
             addInventoryEvent.Raise(ItemData);
-
-            UIManager.Instance.SetSprite(ItemData);
-            SoundManager.Instance.PlaySound(SoundType.SFX,0.5f);
+           // SoundManager.Instance.PlaySound(SoundType.SFX,0.5f);
             Destroy(gameObject);
 
+           
 
         }
 
