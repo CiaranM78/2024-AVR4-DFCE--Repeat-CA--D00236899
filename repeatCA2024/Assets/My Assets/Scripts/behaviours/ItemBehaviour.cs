@@ -21,11 +21,11 @@ namespace AVR
             if (ItemData is NoteData)
             {
                 noteDataUIEvent.Raise(ItemData as NoteData);
+                SoundManager.Instance.PlaySoundOneShot(SoundType.Note);
 
             }
  
             addInventoryEvent.Raise(ItemData);
-           // SoundManager.Instance.PlaySound(SoundType.SFX,0.5f);
             Destroy(gameObject);
 
            

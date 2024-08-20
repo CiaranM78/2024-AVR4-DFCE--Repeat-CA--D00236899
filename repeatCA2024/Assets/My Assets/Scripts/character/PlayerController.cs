@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+// movement code https://www.youtube.com/watch?v=CIJtpkN_e8A&list=LL&index=11 line 14 -18 and line 39-72
+
 namespace AVR
 {
 

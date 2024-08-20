@@ -12,21 +12,7 @@ namespace AVR
 {
     public class ObjectiveTextBehaviour : MonoBehaviour 
     {
-        //[SerializeField]
-        //private Text missiontext;
-        //[SerializeField]
-
-        //[SerializeField]
-        //private ObjectivesData objective;
-
-        //[SerializeField]
-        //private TMP_Text text;
-
-        //public int CurrentObjective()
-        //{
-        //    return ;
-        //}
-
+  
 
 
         public string textvalue;
@@ -34,23 +20,6 @@ namespace AVR
 
       
 
-
-        private void Start()
-        {
-           
-           
-        }
-
-        void Update()
-        {
-
-            //textElement.text = textvalue;
-
-
-        }
-
-
-    
 
     }
 }

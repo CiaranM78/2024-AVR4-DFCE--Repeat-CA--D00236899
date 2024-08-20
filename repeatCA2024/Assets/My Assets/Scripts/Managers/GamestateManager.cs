@@ -11,16 +11,20 @@ public class GameStateManager : Singleton<GameStateManager>
     [SerializeField]
     private ObjectivesData objectivesData;
 
-
     //  private Dictionary<inventory, ObjectivesData> ObjectiveDictionary;
 
     public bool UpdateGameState()
     {
+        if (objectivesData.GetCurrentObjectiveData().ItemDatas.Count == 0)
+        {
+            objectivesData.GetCurrentObjectiveData().IsObjectiveComplete = true;
+        }
         return objectivesData.GetCurrentObjectiveData().IsObjectiveComplete;
     }
 
-    private void UpdateObjective()
+    public void IncrementObjective()
     {
+   
         if (objectivesData.IsLastObjective())
         {
             Time.timeScale = 0f;
@@ -29,11 +33,11 @@ public class GameStateManager : Singleton<GameStateManager>
         else
         {
             objectivesData.IncrementObjective();
-            //  UIManager.Instance;
+            UIManager.Instance.SetObjectiveText();
         }
     }
 
-    public void Start()
+    public void Awake()
     {
        
         objectivesData.ResetObjective();

@@ -22,10 +22,11 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   UniqueId: 1f2c972a-b15c-433e-97f2-b1aa74e988bc
-  LastUpdated: 17/08/24 19:02:19
+  LastUpdated: 19/08/24 23:37:43
   LastUpdatedBy: 
   Notes: 
   Description: Find a way to get past the numberpad door
   itemDatas:
   - {fileID: 11400000, guid: 31a59d20e4a86b944849aa4a66aa4af2, type: 2}
-  isObjectiveComplete: 0
+  isObjectiveComplete: 1
+  endDescription: Retreive medical door key

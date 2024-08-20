@@ -4,6 +4,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//timer code https://www.youtube.com/watch?v=POq1i8FyRyQ&list=LL&index=18 line 57 -73
+
 public class TimerBehaviour : MonoBehaviour
 {
     private TextMeshProUGUI timerUI;
@@ -26,6 +28,16 @@ public class TimerBehaviour : MonoBehaviour
     private void Start()
     {
         timerUI = GetComponent<TextMeshProUGUI>();
+    }
+
+    public void SetEndTimer()
+    {
+        timerUI.color = Color.red;
+
+        if (timeleft >= 45f)
+        {
+            timeleft = 45f;
+        }
     }
 
     //Counts down

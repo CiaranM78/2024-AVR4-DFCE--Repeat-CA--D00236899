@@ -38,7 +38,7 @@ namespace AVR
             else
             {
                 objectivesData.IncrementObjective();
-                // UIManager.Instance.
+                
             }
         }
 

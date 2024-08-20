@@ -10,7 +10,7 @@ namespace AVR {
 
         private void Start()
         {
-            SoundManager.Instance.PlaySound(SoundType.MainTheme, 0.1f);
+            SoundManager.Instance.PlaySoundOneShot(SoundType.MainTheme, 0.1f);
         }
 
         [SerializeField]
@@ -23,7 +23,7 @@ namespace AVR {
             {
                 SoundManager.Instance.StopSound(SoundType.MainTheme);
             }
-            SoundManager.Instance.PlaySound(sound);
+            SoundManager.Instance.PlaySoundOneShot(sound);
         }
 
 
@@ -34,7 +34,7 @@ namespace AVR {
 
             if (sound != SoundType.MainTheme)
             {
-                SoundManager.Instance.PlaySound(SoundType.MainTheme);
+                SoundManager.Instance.PlaySoundOneShot(SoundType.MainTheme);
             }
         }
 

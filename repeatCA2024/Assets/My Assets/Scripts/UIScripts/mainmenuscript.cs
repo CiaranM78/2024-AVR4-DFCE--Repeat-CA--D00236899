@@ -3,18 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// exit code https://discussions.unity.com/t/trying-to-get-the-exit-game-to-work/183425/2 line 25 -34
+
 public class mainmenuscript : MonoBehaviour
 {
     public void PlayButton()
 
-    // adds one onto the build index so it moves to the level under
+   //loads the second level in the scenemanager
     {
         SceneManager.LoadScene(1);
     }
 
     public void mainmenubutton()
 
-    // takesaway one onto the build index so it moves to the level under
+    //loads the first level in the scenemanager
     {
         SceneManager.LoadScene(0);
     }

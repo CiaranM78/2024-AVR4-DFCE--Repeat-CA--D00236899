@@ -7,12 +7,12 @@ public class ItemSelectionResponce : MonoBehaviour, ISelectionResponse
 {
     public void OnDeselect(Transform transform)
     {
-       // Debug.Log("deselected"); 
+       
     }
 
     public void OnSelect(Transform transform)
     {
-      //  Debug.Log("tessst");
+    
        
     }
 

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 
@@ -13,18 +14,14 @@ public class AreaBehaviour : ObjectiveBehaviour
     [SerializeField]
     private InventoryData inventory;
 
-    private void OnTriggerEnter(Collider other)
+    private void MedicineDelivered()
     {
-        if (other.CompareTag("Player"))
-        {
-            HandleObjective();
-        }
-
+        SceneManager.LoadScene(0);
     }
 
     protected override void HandleObjective()
     {
-
+        MedicineDelivered();
     }
 
 

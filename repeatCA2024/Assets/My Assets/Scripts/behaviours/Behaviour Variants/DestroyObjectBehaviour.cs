@@ -4,12 +4,7 @@ using UnityEngine;
 
 public class DestroyObjectBehaviour : ObjectiveBehaviour
 {
-    [SerializeField]
-    private ObjectivesData objectivesData;
-
-    [SerializeField]
-    private InventoryData inventory;
-
+   
     [SerializeField]
     private GameObject objectiveDoor;
 

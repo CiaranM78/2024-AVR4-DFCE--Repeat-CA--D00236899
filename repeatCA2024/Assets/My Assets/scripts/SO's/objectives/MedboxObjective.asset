@@ -22,11 +22,11 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   UniqueId: 7808b1a6-1b4f-4343-8e67-520877d238c0
-  LastUpdated: 17/08/24 19:02:19
+  LastUpdated: 19/08/24 03:34:39
   LastUpdatedBy: 
   Notes: 
   Description: Get medkey to open medical box to retrieve cure for your Daughter.
   itemDatas:
   - {fileID: 11400000, guid: 799269d995ba61041a214cb441c8ac9a, type: 2}
-  - {fileID: 11400000, guid: 324a4565c255c0b4bb5238bc049cde45, type: 2}
   isObjectiveComplete: 0
+  endDescription: Deliver medicine to daughter

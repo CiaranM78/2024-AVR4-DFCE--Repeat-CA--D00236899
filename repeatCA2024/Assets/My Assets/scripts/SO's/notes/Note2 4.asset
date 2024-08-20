@@ -22,13 +22,14 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   UniqueId: 481a53a3-e6ee-487c-ab86-3f4e3f9b4c73
-  LastUpdated: 17/08/24 15:40:35
+  LastUpdated: 19/08/24 03:34:38
   LastUpdatedBy: 
   Notes: 
   Description: " People are dropping like flies\u2019 holy crap ever since that ufo
     crashed at us!!!"
-  itemName: 
+  itemName: Crumbled note
   spriteIcon: {fileID: 21300000, guid: c5d1a873531588d4b8dec758e777005c, type: 3}
+  IsObjective: 0
   day: 20
   month: 11
   year: 1997

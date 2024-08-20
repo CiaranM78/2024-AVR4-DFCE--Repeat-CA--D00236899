@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4793713450ba4004d8a8fe9ac73b6425, type: 3}
+  m_Name: GillySuit
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  UniqueId: 006d5c7b-5b5a-4096-bd67-925060d7a869
+  LastUpdated: 19/08/24 03:34:40
+  LastUpdatedBy: 
+  Notes: 
+  Description: enemies cant detect you
+  itemName: Gilly
+  spriteIcon: {fileID: 21300000, guid: ed7aa9710e37a68469dcd890659e880f, type: 3}
+  IsObjective: 0
+  duration: 5
+  camouflageMaterial: {fileID: 2100000, guid: 72530a5ab6b3db54f861d1891163235a, type: 2}

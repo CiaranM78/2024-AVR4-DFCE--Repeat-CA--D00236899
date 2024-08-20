@@ -58,8 +58,11 @@ namespace AVR
             }
             else
             {
-                inventory.Data.Add(item);
-                UIManager.Instance.SetSprite(item);
+                if (inventory.Data.Count() != 4)
+                {
+                    inventory.Data.Add(item);
+                    UIManager.Instance.SetSprite(item);
+                }
             }
            
         }
@@ -71,9 +74,11 @@ namespace AVR
             if (item is AbilityData ability && currentActiveAbility == null)
             {
                 currentActiveAbility = ability;
+                Debug.Log(currentActiveAbility.ItemName);
                 inventory.Data.Remove(item);
                 UIManager.Instance.RemoveSprite(item);
                 currentActiveAbility.ActivateAbility(player);
+                SoundManager.Instance.PlaySoundOneShot(SoundType.PowerUp);
                 StartCoroutine(ActivateCoroutine());
             }
 

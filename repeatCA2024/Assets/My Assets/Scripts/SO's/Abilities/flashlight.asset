@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4789d74fc0610e1419cd71adcf1d24ee, type: 3}
+  m_Name: flashlight
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  UniqueId: 4cdfa381-8dbd-4c01-8f81-d61be9c28acd
+  LastUpdated: 19/08/24 03:34:39
+  LastUpdatedBy: 
+  Notes: 
+  Description: provides light
+  itemName: flashlight
+  spriteIcon: {fileID: 21300000, guid: 84a33121fce89e54da8a6ce6827058be, type: 3}
+  IsObjective: 0
+  duration: 5

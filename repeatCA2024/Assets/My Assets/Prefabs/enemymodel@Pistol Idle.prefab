@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7035461716201837174}
   - component: {fileID: 8960066608192701012}
+  - component: {fileID: 603514695571102449}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -25,13 +26,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 267622465694566299}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.6037841, y: 0.10206377, z: 0.59789985, w: 0.5172461}
-  m_LocalPosition: {x: -0.85, y: 1.03, z: 0.35}
+  m_LocalRotation: {x: -0.6459624, y: 0.22836736, z: 0.5501107, w: 0.4774507}
+  m_LocalPosition: {x: 0.4600048, y: -0.22999693, z: 0.009995237}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7272583944349151491}
-  m_LocalEulerAnglesHint: {x: -48.302, y: -67.92, z: 131.88}
+  m_LocalEulerAnglesHint: {x: -60.237, y: -82.923, z: 152.363}
 --- !u!108 &8960066608192701012
 Light:
   m_ObjectHideFlags: 0
@@ -43,11 +44,11 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2.47
+  m_Color: {r: 1, g: 0.66834843, b: 0, a: 1}
+  m_Intensity: 50
   m_Range: 20
-  m_SpotAngle: 82.4
-  m_InnerSpotAngle: 6.8
+  m_SpotAngle: 126.62704
+  m_InnerSpotAngle: 51.027046
   m_CookieSize: 10
   m_Shadows:
     m_Type: 1
@@ -83,10 +84,10 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 50
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
@@ -94,6 +95,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &603514695571102449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267622465694566299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &7470454124500259403
 PrefabInstance:
   m_ObjectHideFlags: 0

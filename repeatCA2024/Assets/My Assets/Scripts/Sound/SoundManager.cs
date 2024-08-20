@@ -15,17 +15,17 @@ namespace AVR
         MedicalFacility,
         UFO,
         MainTheme,
-        SFX
+        Note,
+        PowerUp
     }
-
-    // [RequireComponent(typeof(AudioSource))]
     public class SoundManager : Singleton<SoundManager>
     {
-       
+
         private AudioSource audioSource;
 
 
-        [SerializeField] Slider volumeslider;
+        [SerializeField] 
+        private AudioSource backroundAudioSource;
    
         [SerializeField]
         private SoundDictionary soundDictionary;
@@ -39,14 +39,21 @@ namespace AVR
           
         }
 
-        public void PlaySound(SoundType sound, float volume = 0.5f)
+        public void PlaySoundOneShot(SoundType sound, float volume = 0.5f)
         {
             audioSource.PlayOneShot(soundDictionary.GetAudioClip(sound), volume);
         }
 
+
+        public void PlaySound(SoundType sound)
+        {
+            backroundAudioSource.clip = soundDictionary.GetAudioClip(sound);
+            backroundAudioSource.Play();
+        }
+
         public void StopSound(SoundType sound)
         {
-            audioSource.Stop();
+            backroundAudioSource.Stop();
         }
 
         public void ChangeVolume(float volume)

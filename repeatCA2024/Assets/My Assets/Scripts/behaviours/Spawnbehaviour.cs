@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.UIElements;
 
 
@@ -17,18 +18,15 @@ namespace AVR
         private GameObject spawnpointPrefab;
 
         [SerializeField]
-        private ObjectivesData objectivesData;
-
-        [SerializeField]
-        private InventoryData inventory;
-
-
+        private PlayerController player;
 
         private void MedicineSpawn()
         {
 
             Debug.Log("medicine Spawned");
             Instantiate(spawnpointPrefab, spawnpoint.position, spawnpoint.rotation);
+            player.Timer.SetEndTimer();
+            player.GetComponent<NavMeshAgent>().speed = 10;
         }
 
 

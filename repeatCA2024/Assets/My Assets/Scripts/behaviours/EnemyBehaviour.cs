@@ -80,7 +80,7 @@ public class EnemyBehaviour : MonoBehaviour
         // Perform the sphere cast
         if (Physics.SphereCast(origin, detectionRadius, direction, out RaycastHit hit, detectionRange, playerLayerMask,QueryTriggerInteraction.UseGlobal))
         {
-            if(!hit.collider.gameObject.GetComponent<PlayerController>().IsCamouflaged) 
+            if (!hit.collider.gameObject.GetComponent<PlayerController>().IsCamouflaged)
             {
                 // Check if the sphere cast hit an enemy
                 Debug.Log($"Enemy detected: {hit.collider.gameObject.name}");
@@ -88,9 +88,13 @@ public class EnemyBehaviour : MonoBehaviour
                 StartCoroutine(GameOverDelay());
 
             }
-            
+            else if (GetComponent<PlayerController>() == null)
+            {
+                Debug.Log("PlayerController component is missing!");
+            }
 
-            
+
+
         }
     }
 
